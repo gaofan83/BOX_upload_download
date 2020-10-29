@@ -9,11 +9,11 @@
 ###
 ### How to connect to BOX and upload the data from Linux Terminal
 ###
-`[fgao@dator:/home/fgao]$lftp`
-`lftp :~> set ftps:initial-prot ""`
-`lftp :~> set ftp:ssl-force true`
-`lftp :~> set ftp:ssl-protect-data true`
-`lftp :~> open ftps://ftp.box.com:990`
-`lftp ftp.box.com:~> user fgao@caltech.edu`
-`Password:`
-`lftp fgao@caltech.edu@ftp.box.com:~> ls`
+`[fgao@dator:/home/fgao]$lftp`<br/>
+`lftp :~> set ftps:initial-prot ""`<br/>
+`lftp :~> set ftp:ssl-force true`<br/>
+`lftp :~> set ftp:ssl-protect-data true`<br/>
+`lftp :~> open ftps://ftp.box.com:990`<br/>
+`lftp ftp.box.com:~> user fgao@caltech.edu`<br/>
+`Password:`<br/>
+`lftp fgao@caltech.edu@ftp.box.com:~> ls`<br/>
