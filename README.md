@@ -1,6 +1,19 @@
-### How to connect to BOX and download the data in Terminal
+### How to connect to BOX and download the data from Linux Terminal
 ###
 #### Access your BOX account and locate the file you plan to download e.g., `myfile.fastq.gz`; click `Share` button next to the file.
 #### In the pop-up window, click `Link Settings` and copy the `Direct Link`, e.g., `https://caltech.box.com/shared/static/abcdefg.gz`
 #### In your terminal, type the following command to download the file 
 `curl -L https://caltech.box.com/shared/static/abcdefg.gz --output myfile.fastq.gz`
+###
+###
+###
+### How to connect to BOX and upload the data from Linux Terminal
+###
+`[fgao@dator:/home/fgao]$lftp`
+`lftp :~> set ftps:initial-prot ""`
+`lftp :~> set ftp:ssl-force true`
+`lftp :~> set ftp:ssl-protect-data true`
+`lftp :~> open ftps://ftp.box.com:990`
+`lftp ftp.box.com:~> user fgao@caltech.edu`
+`Password:`
+`lftp fgao@caltech.edu@ftp.box.com:~> ls`
