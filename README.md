@@ -7,7 +7,7 @@
 ###
 ###
 ###
-### How to connect to BOX and upload the data from Linux Terminal
+### How to connect to BOX and upload the data from Linux Terminal (note: remember to create a unique password to use external applications in your Caltech Box account)
 ###
 `[fgao@dator:/home/fgao]$lftp`<br/>
 `lftp :~> set ftps:initial-prot ""`<br/>
@@ -16,4 +16,4 @@
 `lftp :~> open ftps://ftp.box.com:990`<br/>
 `lftp ftp.box.com:~> user fgao@caltech.edu`<br/>
 `Password:`<br/>
-`lftp fgao@caltech.edu@ftp.box.com:~> ls`<br/>
+`lftp fgao@caltech.edu@ftp.box.com:~> mirror -R local_directory`<br/>
